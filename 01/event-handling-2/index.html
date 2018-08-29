@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue | Event Handling</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app" v-bind:style="{ backgroundColor: `hsl(${x}, 80%, 50%)` }" v-on:mousemove="xCoordinate">
+    <p><button v-on:click="increment">+</button> {{ counter }}</p>
+    <p>Pixels across: {{ x }}</p>
+  </div>
+
+  <script src="handle.js"></script>
+</body>
+</html>

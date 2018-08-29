@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue | Dynamic Binding</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h3>Type here:</h3>
+    <textarea v-model="message" class="message" rows="5" maxlength="72"></textarea>
+    <p class="booktext">{{ message }} </p>
+  </div>
+
+  <script src="bind.js"></script>
+</body>
+</html>
