@@ -10,6 +10,23 @@
     <gordon v-bind:text="message"></gordon>
     <gordon :text="message"></gordon>
     <horace :text="message"></horace>
+    <horace :othertext="message">Throws error because &lt;text&gt; isn't represented</horace>
+    <h3>
+      <button @click="increment">+</button>
+      Adjust the state
+      <button @click="decrement">-</button>
+    </h3>
+    <h2>This is the app state: <span class="num">{{ count }}</span></h2>
+    <hr>
+    <h4>
+      <osiris count="1"></osiris>
+    </h4>
+    <p>This is a child counter that is using a static integer as props</p>
+    <hr>
+    <h4>
+      <osiris :count="count"></osiris>
+    </h4>
+    <p>This is the same child counter and it is using the state as props</p>
   </div>
   <script src="prop.js"></script>
 </body>

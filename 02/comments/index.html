@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue | comments</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li
+        is="individual-comment"
+        v-for="comment in comments"
+        v-bind:commentpost="comment"
+      ></li>
+    </ul>
+    <input
+      v-model="newComment"
+      v-on:keyup.enter="addComment"
+      placeholder="Add a comment"
+    >
+  </div>
+  <script src="comments.js"></script>
+</body>
+</html>
