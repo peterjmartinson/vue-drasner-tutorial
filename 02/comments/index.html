@@ -20,6 +20,17 @@
       placeholder="Add a comment"
     >
   </div>
+
+
+
+  <!-- This is the Individual Comment Component -->
+  <script type="text/x-template" id="comment-template">
+    <li>
+      <img class="post-img" v-bind:src="commentpost.authorImg">
+      <small>{{ commentpost.author }}</small>
+      <p class="post-comment">"{{ commentpost.text }}"</p>
+    </li>
+  </script>
   <script src="comments.js"></script>
 </body>
 </html>
