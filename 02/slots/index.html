@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue | comments</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h2>We can use slots to populate content</h2>
+		<app-bernhard>
+			<h3>This is slot number one</h3>
+		</app-bernhard>
+		<app-bernhard>
+			<h3>This is slot number two</h3>
+			<small>I can put more info in, too!</small>
+		</app-bernhard>
+	</div>
+
+
+
+  <!-- This is the Component pointed to by Bernhard -->
+  <script type="text/x-template" id="childarea">
+    <div class="child">
+        <!-- // I'm not sure what the following does! -->
+        <slot>Temporary Slot Text</slot>
+        <p>
+          It's a veritable slot machine!
+          <br> 
+          Ha ha aw
+        </p>
+    </div>
+  </script>
+  <script src="slots.js"></script>
+</body>
+</html>
+
